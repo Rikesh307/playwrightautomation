@@ -1,0 +1,23 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self
+
+  - task: DockerInstaller@0
+    displayName: Install Docker
+
+  - script: |
+      docker build -t pw-tests .
+      docker run --rm pw-tests
+    displayName: Build and Run Playwright Tests in Docker
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(System.DefaultWorkingDirectory)/playwright-report'
+      artifact: 'playwright-report'
+      publishLocation: 'pipeline'
+    displayName: Publish Playwright HTML Report
