@@ -1,0 +1,5 @@
+"Name,Email,Age"
+"Alice,alice@example.com,25"
+"Bob,,30"
+",carol@example.com,28"
+"David,david@example.com,"

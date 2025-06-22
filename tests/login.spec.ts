@@ -1,27 +1,25 @@
-import {test, expect, Browser, Page, Locator} from '@playwright/test'
-import { webkit, chromium, firefox } from 'playwright'
+import { test, expect, Browser, Page, Locator } from '@playwright/test';
+import { chromium } from 'playwright';
 
-test('login test', async()=>{
-   const browser:Browser =  await chromium.launch({headless: false, channel: 'chrome'});
-   const page:Page = await browser.newPage();
-    await page.goto("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
-  
-    const emailId:Locator =  page.locator('#input-email');
-    const password:Locator =  page.locator('#input-password');
-    const loginButton:Locator = page.locator("[value='Login']");
+test('Sauce Demo login test', async () => {
+  const browser: Browser = await chromium.launch({ headless: true });
+  const page: Page = await browser.newPage();
 
-    await emailId.fill("pwtest@opencart.com");
-    await password.fill("playwright@123");
-    await loginButton.click();
+  await page.goto('https://www.saucedemo.com/');
 
-    const title = await page.title();
-    console.log("home page title: ", title);
-    await page.screenshot({path: 'homepage.png'});
+  const username: Locator = page.locator('#user-name');
+  const password: Locator = page.locator('#password');
+  const loginButton: Locator = page.locator('#login-button');
 
-    expect(title).toEqual('Account Login');
+  await username.fill('standard_user');
+  await password.fill('secret_sauce');
+  await loginButton.click();
 
-   // await browser.close();
+  // Verify that the page title or header confirms login success
+  const inventoryTitle = page.locator('.title');
+  await expect(inventoryTitle).toHaveText('Products');
 
-   //await new Promise(() => {}); // prevents your script from exiting! 
+  await page.screenshot({ path: 'saucedemo_homepage.png' });
 
+  // await browser.close();
 });

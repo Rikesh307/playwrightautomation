@@ -1,0 +1,178 @@
+cookies 
+Write & verify XPath & CSS Selector here......Click on ➕ icon to save value ➡️
+ 
+Axes 
+    
+        
+ 1Rel cssSelector button[id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'] strong
+ 1Rel XPath //strong[normalize-space()='Accept all cookies']
+ 1index XPath (//strong[normalize-space()='Accept all cookies'])[1]
+  testRigor Path "Accept all cookies"
+ 1jQuery $("button[id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'] strong")
+ 1JS Path document.querySelector("button[id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'] strong")
+ 1Abs XPath /html[1]/body[1]/div[1]/div[1]/div[2]/button[3]/strong[1]
+ 18tagName strong
+<strong xpath="1"></strong>
+====================================================================================
+ 
+1Rel cssSelector h1[role='heading']
+ 1Rel XPath //h1[normalize-space()='Your account']
+ 1index XPath (//h1[normalize-space()='Your account'])[1]
+  testRigor Path "Your account"
+ 1jQuery $("h1[role='heading']")
+ 1JS Path document.querySelector("h1[role='heading']")
+ 1Abs XPath /html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/h1[1]
+ 2tagName h1
+
+
+<h1 role="heading" xpath="1"></h1>
+
+ 1Rel cssSelector label[for='signInName']
+ 1Rel XPath //label[normalize-space()='Email address']
+ 1index XPath (//label[normalize-space()='Email address'])[1]
+  testRigor Path "Email address"
+ 1jQuery $("label[for='signInName']")
+ 1JS Path document.querySelector("label[for='signInName']")
+ 1className tfl-text-input__label
+ 1Abs XPath /html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/label[1]
+ 3tagName label
+<label for="signInName" class="tfl-text-i
+
+  
+        
+ 1Rel cssSelector #signInName
+ 1Rel XPath //input[@id='signInName']
+ 1index XPath (//input[@id='signInName'])[1]
+  testRigor Path "Email address"
+ 1jQuery $("#signInName")
+ 1JS Path document.querySelector("#signInName")
+ 1id signInName
+ 1name Email address
+ 2className tfl-text-input__input
+ 1Abs XPath /html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[1]/input[1]
+ 3tagName input
+<input type="text" id="signInName" name
+
+  
+        
+ 1Rel cssSelector label[for='password']
+ 1Rel XPath //label[normalize-space()='Password']
+ 1index XPath (//label[normalize-space()='Password'])[1]
+  testRigor Path "Password"
+ 1jQuery $("label[for='password']")
+ 1JS Path document.querySelector("label[for='password']")
+ 1Abs XPath /html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[2]/div[1]/label[1]
+ 3tagName label
+
+Write & verify XPath & CSS Selector here......Click on ➕ icon to save value ➡️
+ 
+Axes 
+    
+        
+ 1Rel cssSelector #password
+ 1Rel XPath //input[@id='password']
+ 1index XPath (//input[@id='password'])[1]
+  testRigor Path "Password"
+ 1jQuery $("#password")
+ 1JS Path document.querySelector("#password")
+ 1id password
+ 1name Password
+ 1className tfl-text-input__input has-password-toggle
+ 1Abs XPath /html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/div[4]/div[2]/input[1]
+ 3tagName input
+
+  
+        
+ 1Rel cssSelector #next
+ 1Rel XPath //button[@id='next']
+ 1index XPath (//button[normalize-space()='Sign in'])[1]
+  testRigor Path "Sign in"
+ 1jQuery $("#next")
+ 1JS Path document.querySelector("#next")
+ 1id next
+ 1className tfl-button tfl-button--primary
+ 1Abs XPath /html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/form[1]/div[6]/button[1]
+ 7tagName button
+
+
+Rel cssSelector h1[role='heading']
+ 1Rel XPath //h1[normalize-space()='Check your texts']
+ 1index XPath (//h1[normalize-space()='Check your texts'])[1]
+  testRigor Path "Check your texts"
+ 1jQuery $("h1[role='heading']")
+ 1JS Path document.querySelector("h1[role='heading']")
+ 1className tfl-page-heading
+ 2tagName h1
+
+
+Write & verify XPath & CSS Selector here......Click on ➕ icon to save value ➡️
+ 
+Axes 
+    
+        
+ 1Rel cssSelector .heading
+ 1Rel XPath //div[@class='heading']
+ 1index XPath (//div[@class='heading'])[1]
+  testRigor Path "Check your texts"
+ 1jQuery $(".heading")
+ 1JS Path document.querySelector(".heading")
+ 1className heading
+ 66tagName div
+
+<div class="heading" xpath="1"></div>
+Rel cssSelector #mfaChallengeVerificationControl_but_verify_code
+ 1Rel XPath //button[@id='mfaChallengeVerificationControl_but_verify_code']
+ 1index XPath (//button[normalize-space()='Confirm'])[1]
+  testRigor Path "Confirm"
+ 1jQuery $("#mfaChallengeVerificationControl_but_verify_code")
+ 1JS Path document.querySelector("#mfaChallengeVerificationControl_but_verify_code")
+ 1id mfaChallengeVerificationControl_but_verify_code
+ 1className verifyCode tfl-button tfl-button--primary
+ 11tagName button
+<button class="verifyCode tfl-button tfl-button--primar
+to verfify user navigate to sign in page 
+
+ 1Rel cssSelector #mfaChallengeVerificationControl_success_message
+ 1Rel XPath //div[@id='mfaChallengeVerificationControl_success_message']
+ 1index XPath (//div[@id='mfaChallengeVerificationControl_success_message'])[1]
+  testRigor Path "Your code has been verified."
+ 1jQuery $("#mfaChallengeVerificationControl_success_message")
+ 1JS Path document.querySelector("#mfaChallengeVerificationControl_success_message")
+ 1id mfaChallengeVerificationControl_success_message
+ 66tagName div
+<div id="mfaChallengeVerificationContro
+
+Rel cssSelector #continue
+ 1Rel XPath //button[@id='continue']
+ 1index XPath (//button[normalize-space()='Next'])[1]
+  testRigor Path "Next"
+ 1jQuery $("#continue")
+ 1JS Path document.querySelector("#continue")
+ 1id continue
+ 4className tfl-button tfl-button--primary
+ 11tagName button
+
+ 1Rel cssSelector .tfl-page-header
+ 1Rel XPath //h1[normalize-space()='Dashboard']
+ 1index XPath (//h1[normalize-space()='Dashboard'])[1]
+  testRigor Path "Dashboard"
+ 1jQuery $(".tfl-page-header")
+ 1JS Path document.querySelector(".tfl-page-header")
+ 1className tfl-page-header
+ 1tagName h1
+<h1 class="tfl-page-header" xpath="1">
+
+
+Feature: Login Feature
+
+A short summary of the feature
+
+@tag1
+Scenario: User is able to login sucessfully with valid username and password
+	Given User is nevaitage to Login page of the website https://account.tfl.gov.uk/c00064e1-def7-4087-8468-a50e3894f95e/b2c_1a_signin/oauth2/v2.0/authorize?client_id=89ea38c7-c89b-491d-93b6-84b9fe61b506&scope=openid%20offline_access%20profile&redirect_uri=https%3A%2F%2Faccount.tfl.gov.uk%2Fmy-account&client-request-id=ddaed367-b482-498c-b194-775df019eda3&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.38.4&client_info=1&code_challenge=QHrmGom5ampKGMFEcEwDra3k-p7itzvMfHEQO6Kn_Zw&code_challenge_method=S256&nonce=d1cf58fb-0eac-4d35-9445-8a3442e95e39&state=eyJpZCI6IjM4YjQ4MThmLTU5NWUtNDAwZC04ZjdkLTA3MmNlNGIzMjZkNyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D&id_token_hint=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZFRva2VuSGludF9BY2NvdW50VGllciI6IkJhc2ljIiwiaWRUb2tlbkhpbnRfTmVnb3RpYXRlTWZhRGlyZWN0aXZlIjoiWWVzIiwiaWF0IjoxNzMyNzI3MzI4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6ImJkM2E0NGNlLWQxYWMtNGI4Zi04Yjg1LWU2N2VkN2JhMWRmZiIsImV4cCI6MTczMjgxMzcyOH0.drGX_jPv7Y4yzJ67eGNwvsdvoYnBBpFg5slZ94hvECg
+	When user user saw email field and password filed and enter email "rtongucha@gmail.com" and password "Messicat10#" and enter login button
+	And user should able to see verfictaion page open where ask for code sent in mobile number and click next
+	And User should be alble to see dashbord
+provide me feature file step definition and pom file
+
+

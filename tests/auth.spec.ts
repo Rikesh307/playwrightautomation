@@ -1,24 +1,20 @@
-import {test, expect, Browser, Page, Locator, BrowserContext} from '@playwright/test'
-import { webkit, chromium, firefox } from 'playwright'
+import { test, expect } from '@playwright/test';
 
-test('auth test', async()=>{
+function createAuthHeader(username: string, password: string) {
+  return 'Basic ' + btoa(username + ':' + password);
+}
 
-  const browser:Browser =  await firefox.launch({headless: true});
-  const context:BrowserContext = await browser.newContext();
-  const page:Page = await context.newPage();
-
+test('auth test', async ({ page }) => {
   const username = 'admin';
   const password = 'admin';
-  //const authHeader = 'Basic ' + btoa(username+':'+password);
-  page.setExtraHTTPHeaders({Authorization : createAuthHeader(username, password)});
 
-   await page.goto('https://the-internet.herokuapp.com/basic_auth');
+  // Set the Authorization header
+  await page.setExtraHTTPHeaders({ Authorization: createAuthHeader(username, password) });
 
+  // Navigate to the target page
+  await page.goto('https://the-internet.herokuapp.com/basic_auth');
 
-//await new Promise(() => {}); // prevents your script from exiting! 
-
+  // Validate the authentication success
+  const content = await page.textContent('body');
+  expect(content).toContain('Congratulations! You must have the proper credentials.');
 });
-
-function createAuthHeader(username:any, password:any){
-    return 'Basic ' + btoa(username+':'+password);
-}
